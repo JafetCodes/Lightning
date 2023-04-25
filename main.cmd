@@ -1,6 +1,6 @@
 @echo off
 Mode 60,15
-color 4f
+color 0c
 title [V3] XEINTS - FPS PERFORMANCE
 SETLOCAL EnableDelayedExpansion
 
@@ -22,7 +22,7 @@ echo ----------------
 set /p option=Select an option (1 or 2): 
 
 if "%option%"=="1" (
-    start https://www.ejemplo.com
+    start https://dsc.gg/XeintsFPS
     cls
     goto main
     goto input
@@ -46,7 +46,7 @@ goto start
 
 :success
 del /f /q "C:\Users\Public\success.txt"
-shutdown /r /f /t 10 /c "Reboot is required..."
+shutdown /r /f /t 3 /c "Reboot is required..."
 rmdir /s /q C:\Windows\Lightning
 DEL "%~f0"
 
