@@ -47,8 +47,9 @@ goto start
 :success
 del /f /q "C:\Users\Public\success.txt"
 shutdown /r /f /t 10 /c "Reboot is required..."
-DEL "%~f0"
 rmdir /s /q C:\Windows\Lightning
+DEL "%~f0"
+
 exit
 ) else (
   echo Invalid option. Please select a valid option (1/2/3).
